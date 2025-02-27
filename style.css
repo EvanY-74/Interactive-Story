@@ -30,6 +30,7 @@ main {
     height: 30%;
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
 }
 
 #bg {

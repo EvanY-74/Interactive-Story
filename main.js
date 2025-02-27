@@ -190,8 +190,8 @@ let choices = {};
         await typeDialog("Amelia", "Oh, it looks like the truck might need a new backup wheel, this one looks deflated.");
         await typeDialog("You", "Someone else can look at the after. We'll probably be fine.");
         // TODO?: choice when they are getting other random stuff
-        await showText("At an abandoned hospital");
         changeImage("hospital.jpg")
+        await showText("At an abandoned hospital");
         await wait(2000);
         await typeDialog("You", "Amelia, I think this is enough. You want to go back now?");
         await typeDialog("Amelia", "Um yeah, okay I'll get these water bottles and you can get that defibrillator and walkie-talkie");
@@ -220,6 +220,7 @@ let choices = {};
         await typeText("Oh, someone finally fixed the backup one too.");
         await typeText("They didn't clean up though.");
     } else {
+        changeImage('truck.jpg');
         if (choices.partner == "Amelia") await typeText("Oh yea, that truck wheel. Maybe there's an extra?");
         await typeText("I can't find anything here. I don't know how this is place is organized or if it even is.");
     }
