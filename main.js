@@ -210,6 +210,7 @@ let choices = {};
         // await typeDialog("", "");
     }
     main.textContent = '';
+    changeImage('camp.jpg');
     await showText("You are back at camp.");
     await wait(2000);
     await showText("You decide to check on parts of the camp since you are bored.", { clearScreen: false });
@@ -234,6 +235,7 @@ let choices = {};
 
     await showTitle("1 day before the shot");
 
+    changeImage('camp.jpg');
     await typeDialog("You", "What a day!");
     await typeDialog("Rob", "Yea, that deer will be enough food for a couple of days.")
     await typeDialog("Victoria", "And, Joseph finally put that rifle to use.");
