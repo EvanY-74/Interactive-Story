@@ -179,7 +179,7 @@ let choices = {};
         choices.conversationWithJames = await displayChoices("How do you respond?", ["Agree with James", "Take the blame"])
         if (choices.conversationWithJames == "Agree with James") await typeDialog("You", "No, I mean technically, yes, but If I was at different angle... ");
         else await typeDialog("You", "But it was me!");
-        await typeText("When took the shot,~ and it hit her in the leg, she shouldn't have died. She just kept bleeding.");
+        await typeText("When took the shot,~ and it hit her in the leg, I was an accident but still, she shouldn't have died. She just kept bleeding.");
         await typeDialog("James", "Yea");
         await typeText("*More silence*");
     } else { // choices.partner == "Amelia"
